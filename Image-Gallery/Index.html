@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Piyush Mali</title>
+    <!-- Google Fonts: Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Version query parameter updated to force browser to reload latest CSS -->
+    <link rel="stylesheet" href="style.css?v=5.0">
+</head>
+<body class="dark-theme">
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="logo-box">PM</span>
+                <div class="brand-text">
+                    <span class="brand-title">Piyush Mali</span>
+                    <span class="brand-subtitle"><span class="status-dot"></span> CodeAlfa Task 1</span>
+                </div>
+            </div>
+            
+            <div class="nav-actions">
+                <!-- Theme Switcher Button -->
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <span id="themeIcon">🌙</span>
+                    <span id="themeText">Dark</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="hero-top-badge">
+                <span class="badge-sparkle">✨</span> CodeAlfa Internship Task 1 Showcase
+            </div>
+            
+            <h1 class="page-title">Curated Photo Gallery</h1>
+            <p class="page-desc">A responsive masonry image showcase featuring high-definition photographs across 8 categories with real-time search & 2-step fullscreen mode.</p>
+
+            <!-- Header Quick Stats Metrics Section -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number"></span>
+                    <span class="stat-text">UHD Photos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-text">Categories</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">HD</span>
+                    <span class="stat-text">Downloads</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">2-Step</span>
+                    <span class="stat-text">Fullscreen</span>
+                </div>
+            </div>
+
+            <!-- Real-time Search Bar Box -->
+            <div class="search-box-wrapper">
+                <div class="search-input-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search photos (e.g. Porsche, Ninja, Anime, Tiger, Paris)..." aria-label="Search Photos">
+                </div>
+            </div>
+        </header>
+
+        <!-- Segmented Filter Control (7 Categories: Nature, Architecture, Animals, Travel, Cars, Bikes, Anime) -->
+        <div class="filter-wrapper">
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">🌟 All <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="nature">🌿 Nature <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="architecture">🏛️ Architecture <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="animals">🦁 Animals <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="travel">✈️ Travel <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="cars">🏎️ Cars <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="bikes">🏍️ Bikes <span class="badge"></span></button>
+                <button class="tab-btn" data-filter="anime">⛩️ Anime <span class="badge"></span></button>
+            </div>
+        </div>
+
+        <!-- Masonry Style Image Gallery Grid -->
+        <div class="masonry-grid" id="galleryGrid"></div>
+    </main>
+
+    <!-- LIGHTBOX MODAL WITH DOWNLOAD, BACK & 2-STEP FULLSCREEN MODE -->
+    <div class="lightbox" id="lightbox">
+        <!-- Top Toolbar with Back Button, Fullscreen Exit & Download Action -->
+        <div class="lightbox-toolbar">
+            <button class="back-btn" id="backBtn">
+                <span>&#8592;</span> Back to Gallery
+            </button>
+            
+            <div class="toolbar-actions">
+                <button id="fullscreenExitBtn" class="fullscreen-exit-btn" style="display: none;">
+                    <span>❌</span> Exit Fullscreen
+                </button>
+                <button id="downloadBtn" class="download-btn">
+                    <span>⬇</span> Download HD
+                </button>
+                <span class="close-btn" id="closeBtn">&times;</span>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Image">&#10094;</button>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Image">&#10095;</button>
+
+        <div class="lightbox-dialog" id="lightboxDialog">
+            <div class="lightbox-media" id="lightboxMedia">
+                <img id="lightboxImg" src="" alt="Gallery Preview" title="Click again to enter Fullscreen Mode">
+                <div class="fullscreen-hint">🔍 Click image to enter Fullscreen mode</div>
+            </div>
+            <div class="lightbox-info">
+                <span class="lightbox-category" id="lightboxCategory">NATURE</span>
+                <h3 class="lightbox-title" id="lightboxCaption">Image Title</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimalist Footer with Email, GitHub, and LinkedIn -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Piyush Mali. Built for CodeAlfa Internship.</p>
+            <div class="social-links">
+                <a href="mailto:piyushmali00001@gmail.com" class="footer-link">📧 Email</a>
+                <span class="divider">•</span>
+                <a href="https://github.com/PIYUSH-MALI07" target="_blank" rel="noopener" class="footer-link">🐙 GitHub</a>
+                <span class="divider">•</span>
+                <a href="https://linkedin.com/in/piyush-mali-276378396" target="_blank" rel="noopener" class="footer-link">💼 LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Version query parameter updated to force browser to reload latest script -->
+    <script src="script.js?v=5.0"></script>
+</body>
+</html>
