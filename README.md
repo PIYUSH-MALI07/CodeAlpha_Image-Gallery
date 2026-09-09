@@ -9,8 +9,8 @@ It showcases **160+ high-definition photographs** across **7 curated categories*
 ---
 
 ## 🚀 Preview
+<img width="1532" height="912" alt="image" src="https://github.com/user-attachments/assets/e5828d73-cea0-4b1e-847d-5f173c67d430" />
 
-![Image Gallery Preview]("Screenshot 2026-09-09 212053.png")
 
 ---
 
