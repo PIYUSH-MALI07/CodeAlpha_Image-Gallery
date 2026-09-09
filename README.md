@@ -10,7 +10,7 @@ It showcases **160+ high-definition photographs** across **7 curated categories*
 
 ## 🚀 Preview
 
-![Image Gallery Preview](Screenshot%202026-09-08%20101904.png)
+![Image Gallery Preview]("Screenshot 2026-09-09 212053.png")
 
 ---
 
