@@ -16,7 +16,7 @@ It showcases **160+ high-definition photographs** across **7 curated categories*
 
 ## ✨ Key Features
 
-- 🖼️ **160+ UHD Photographs** — 7 curated categories: Nature, Architecture, Animals, Travel, Cars, Bikes & Anime.
+- 🖼️ **UHD Photographs** — 7 curated categories: Nature, Architecture, Animals, Travel, Cars, Bikes & Anime.
 - 🔎 **Real-Time Instant Search** — live filtering of photos by title or category keyword as you type.
 - 🗂️ **Category Filter Tabs** — segmented tab bar with instant switching and per-category photo counts.
 - 🌗 **Light / Dark Theme Switcher** — one-click theme toggle with `localStorage` memory.
