@@ -1,4 +1,4 @@
-# 📸 Interactive Image Gallery — CodeAlfa Task 1
+# 📸 Interactive Image Gallery — CodeAlpha Task 1
 
 A responsive, feature-packed **Image Gallery** built as Task 1 for the **CodeAlfa Frontend Development Internship**.
 
@@ -85,4 +85,4 @@ All photographs are pulled from free stock sources (**Unsplash**, **Pexels**, an
 
 ---
 
-© 2026 Piyush Mali · Built for the CodeAlfa Internship.
+© 2026 Piyush Mali · Built for the CodeAlpha Internship.
